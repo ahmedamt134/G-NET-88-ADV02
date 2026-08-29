@@ -85,5 +85,99 @@
             //    }
             //} 
             #endregion
+
+
+            #region Task3
+            //static void PrintReport(List<Product> products, Action<Product> action)
+            //{
+            //    foreach (Product product in products)
+            //    {
+            //        action(product);
+            //    }
+            //}
+
+            //static List<string> TransformProducts(List<Product> products, Func<Product, string> transform)
+            //{
+            //    List<string> result = new List<string>();
+
+            //    foreach (Product product in products)
+            //    {
+            //        result.Add(transform(product));
+            //    }
+
+            //    return result;
+            //}
+
+            //static List<Product> FilterProducts(List<Product> products, Predicate<Product> condition)
+            //{
+            //    List<Product> result = new List<Product>();
+
+            //    foreach (Product product in products)
+            //    {
+            //        if (condition(product))
+            //        {
+            //            result.Add(product);
+            //        }
+            //    }
+
+            //    return result;
+            //}
+
+            //Console.WriteLine("--- Short Report ---");
+
+            //PrintReport(catalog, p =>
+            //{
+            //    Console.WriteLine($"{p.Name} - ${p.Price}");
+            //});
+
+
+            //Console.WriteLine("\n--- Detailed Report ---");
+
+            //PrintReport(catalog, p =>
+            //{
+            //    Console.WriteLine(
+            //        $"[{p.Category}] {p.Name} | Price: ${p.Price} | Stock: {p.Stock}"
+            //    );
+            //});
+
+            //Console.WriteLine("\n--- Summary List ---");
+
+            //List<string> summary = TransformProducts(
+            //    catalog,
+            //    p => $"{p.Name} (${p.Price})"
+            //);
+
+            //foreach (string item in summary)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+            //Console.WriteLine("\n--- Price Labels ---");
+
+            //List<string> labels = TransformProducts(
+            //    catalog,
+            //    p => p.Price > 100 ? "Expensive!" : "Affordable"
+            //);
+
+            //for (int i = 0; i < catalog.Count; i++)
+            //{
+            //    Console.WriteLine($"{catalog[i].Name}: {labels[i]}");
+            //}
+
+            //Console.WriteLine("\n--- Low-Stock Alert ---");
+
+            //List<Product> lowStock = FilterProducts(
+            //    catalog,
+            //    p => p.Stock < 20
+            //);
+
+            //foreach (Product p in lowStock)
+            //{
+            //    Console.WriteLine($"[LOW STOCK] {p.Name}: only {p.Stock} left!");
+            //}
+
+            #endregion
         }
+    }
 }
